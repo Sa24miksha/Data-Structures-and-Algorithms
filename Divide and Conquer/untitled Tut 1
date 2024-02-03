@@ -1,0 +1,26 @@
+Time Complexity of merge sort 
+
+in the code we solved the problem in 4 steps :-
+
+1. Merge Sort ( function called ) -> base case -> k1 (constant time)
+
+2. Call for left side if array -> half of an array so time taken -> T(n/2)
+
+3. Call for right side of array -> half of an array so time taken -> T(n/2)
+
+4. Merge ( function called ) -> Traverse and merges the 2 halfs of the arrays -> n*k
+
+T(n) = K1 + T(n/2) + T(n/2) + n*k
+     = k1 + 2T(n/2) + n*k
+    we can write T(n/2) as :
+    T(n)   = 2 T(n/2) + n*k
+    T(n/2) = 2 T(n/4) + n/2*k 
+    T(n/4) = 2 T(n/8) + n/4*k
+    .           .         .
+    .           .         .
+    .           .         .
+    .           .         .
+    T(n)   =  (logn - 1)n*k + k/2
+           =  k*n*logn - nk
+           =  k*n*logn
+           =  O(nlogn)

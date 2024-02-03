@@ -1,4 +1,4 @@
-//Merge two sorted arrays
+//Quick Sort 
 
 #include<iostream>
 using namespace std;
