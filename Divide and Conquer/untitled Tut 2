@@ -1,0 +1,3 @@
+Time complexity of the quicksort :- 
+
+The time complexity of quicksort is O(nlogn) because each partition logic takes linear time which is O(n) and the number of times we need to perform partition is log(n) in the best case !
